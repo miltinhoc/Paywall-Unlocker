@@ -1,0 +1,29 @@
+{
+	"manifest_version": 3,
+	"name": "Paywall Unlocker",
+	"short_name": "punlock",
+	"description": "Unlocks paywalls from various websites",
+	"version": "1.1",
+	"icons": {
+		"16": "16.png",
+		"48": "48.png",
+		"128": "128.png"
+	},
+	"permissions": ["activeTab"],
+	"host_permissions": [
+		"https://fortune.com/*/*/*/*/*",
+		"https://www.acorianooriental.pt/noticia/*"
+	],
+	"content_scripts": [
+		{
+			"matches": ["https://fortune.com/*/*/*/*/*"],
+			"js": ["js/content-fortune.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches": ["https://www.acorianooriental.pt/noticia/*"],
+			"js": ["js/content-acoreano.js"],
+			"run_at": "document_end"
+		}
+	]
+}
