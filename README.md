@@ -1,4 +1,4 @@
-# AcorianoOriental-Extension
+# Paywall Unlocker
 
 ## Currently disables paywalls for:
 1. acorianooriental.pt
