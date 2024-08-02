@@ -9,19 +9,12 @@
 		"48": "48.png",
 		"128": "128.png"
 	},
-	"permissions": ["activeTab", "declarativeNetRequest", "declarativeNetRequestFeedback"],
+	"permissions": ["activeTab"],
 	"host_permissions": [
 		"https://fortune.com/*/*/*/*/*",
 		"https://www.acorianooriental.pt/noticia/*",
 		"https://www.bloomberg.com/*/*/*/*"
 	],
-	"declarative_net_request": {
-		"rule_resources": [{
-			"id": "block_transform_script_ruleset",
-			"enabled": false,
-			"path": "json/rules_1.json"
-		}]
-	},
 	"content_scripts": [
 		{
 			"matches": ["https://fortune.com/*/*/*/*/*"],
